@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(90deg, #2B6A7E 0%, #85E39E 100%);
+    display: flex;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    color: white;
+}
+
+#header > *:first-child {
+    height: 75%;
+}
+
+#header > *:not(:last-child) {
+    margin: auto 25px;
+}
+
+#header > *:first-child > img {
+    height: 100%;
+}
+
+#header > a:not(.emphasis) {
+    opacity: 0.7;
+    transition: opacity 0.25s;
+}
+
+#header > a:not(.emphasis):hover {
+    opacity: 1;
+}
+
+.emphasis {
+    transition: color 0.25s;
+}
+
+.emphasis:hover {
+    color: #a7fff2;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#linkbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    position: absolute;
+    right: 25px;
+}
+
+.w95button {
+    box-shadow: inset -2px -2px 0 #858585, inset 2px 2px 0 #FFFFFF;
+    background: #babcb2;
+}
+
+#linkbuttons > a {
+    height: 50px;
+    width: 50px;
+    margin-left: 3px;
+}
+
+#linkbuttons > a > img {
+    height: 32px;
+    margin: 9px;
+}
+
+.w95button:active {
+    box-shadow: inset -2px -2px 0 #FFFFFF, inset 2px 2px 0 #858585;
+}
+
+#fakewin {
+    text-align: center;
+    border-bottom: solid 3px grey;
+    border-left: solid 3px grey;
+    border-right: solid 3px #e0e0e0;
+    border-top: solid 3px #e0e0e0;
+    width: 60vw;
+    /*height: 40vh;*/
+    margin: 150px auto;
+    background-size: contain;
+    background: url("im/mintblur.png") no-repeat center;
+    color: white;
+}
+
+#fakewin code {
+    padding: 10px;
+    color: black;
+}
+
+#fakeheader {
+    border-bottom: solid 2px #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    background: linear-gradient(90deg, #095459 0%, #85E39E 100%);
+    padding: 0 4px;
+    font-family: monospace;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#fakebuttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#fakebuttons > *  {
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+}
+
+#fakebuttons > * > img {
+    height: 90%;
+}
+
+#fakewin > h1 {
+    text-align: center;
+}
+
+#fakewin > p {
+    padding: 20px;
+    margin: 0;
+}
+
+
+.w95Menubutton {
+}
+
+.w95Menubutton > p {
+    color: black;
+}
+
+#fakeMenu {
+    border-bottom: solid 2px #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    background: linear-gradient(90deg, #095459 0%, #85E39E 100%);
+    padding: 0 px;
+    font-family: monospace;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+#fakeMenubuttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#fakeMenubuttons > *  {
+    height: 16px;
+    margin-left: 2px;
+    padding: 0 10px;
+}
+
+#fakeMenubuttons > * > img {
+    height: 90%;
+    padding: 0 10px;
+}
